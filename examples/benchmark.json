@@ -1,0 +1,155 @@
+[
+  {
+    "level": {
+      "schema_version": 1,
+      "id": "first-push",
+      "title": "01 · Cú đẩy đầu tiên",
+      "source": "preset",
+      "seed": null,
+      "grid": [
+        "######",
+        "#    #",
+        "# .  #",
+        "# $  #",
+        "# @  #",
+        "######"
+      ]
+    },
+    "search": {
+      "algorithm": "Breadth-first search (BFS)",
+      "status": "solved",
+      "actions": [
+        "U"
+      ],
+      "moves": 1,
+      "pushes": 1,
+      "explored_states": 1,
+      "discovered_states": 2,
+      "elapsed_ms": 0.046,
+      "optimal_for": "player_moves",
+      "start_state": {
+        "player": [
+          4,
+          2
+        ],
+        "boxes": [
+          [
+            3,
+            2
+          ]
+        ]
+      },
+      "reason": "",
+      "metadata": null
+    }
+  },
+  {
+    "level": {
+      "schema_version": 1,
+      "id": "double-orbit",
+      "title": "02 · Quỹ đạo kép",
+      "source": "preset",
+      "seed": null,
+      "grid": [
+        "######",
+        "# . .#",
+        "# $ $#",
+        "# @  #",
+        "#    #",
+        "######"
+      ]
+    },
+    "search": {
+      "algorithm": "Breadth-first search (BFS)",
+      "status": "solved",
+      "actions": [
+        "U",
+        "D",
+        "R",
+        "R",
+        "U"
+      ],
+      "moves": 5,
+      "pushes": 2,
+      "explored_states": 27,
+      "discovered_states": 41,
+      "elapsed_ms": 0.187,
+      "optimal_for": "player_moves",
+      "start_state": {
+        "player": [
+          3,
+          2
+        ],
+        "boxes": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      },
+      "reason": "",
+      "metadata": null
+    }
+  },
+  {
+    "level": {
+      "schema_version": 1,
+      "id": "detour",
+      "title": "03 · Đường vòng",
+      "source": "preset",
+      "seed": null,
+      "grid": [
+        "#######",
+        "# .   #",
+        "#   # #",
+        "# $$  #",
+        "#   . #",
+        "#  @  #",
+        "#######"
+      ]
+    },
+    "search": {
+      "algorithm": "Breadth-first search (BFS)",
+      "status": "solved",
+      "actions": [
+        "U",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "L",
+        "D",
+        "R"
+      ],
+      "moves": 9,
+      "pushes": 4,
+      "explored_states": 284,
+      "discovered_states": 435,
+      "elapsed_ms": 3.125,
+      "optimal_for": "player_moves",
+      "start_state": {
+        "player": [
+          5,
+          3
+        ],
+        "boxes": [
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "reason": "",
+      "metadata": null
+    }
+  }
+]

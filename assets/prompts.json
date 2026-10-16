@@ -1,0 +1,33 @@
+{
+  "theme": "Orbital Warehouse",
+  "generator": "Built-in image_gen",
+  "generation_mode": "pre-generated assets; no live model inference in app",
+  "normalization": "Pillow: RGBA PNG, 64×64; preserve object aspect ratio and alpha",
+  "assets": {
+    "player": {
+      "source": "image_gen",
+      "generation_prompt": "Use case: stylized-concept. Asset type: a single game tile for a polished cozy science-fiction Sokoban puzzle. Style: clean hand-painted 3D clay game illustration, orthographic top-down with a very slight view of the front edge, soft bevels, sophisticated navy/teal and warm amber palette, crisp silhouette, restrained details, no text, no logos, no watermarks. Square composition, one tile only, centered, all content fully inside image with margin. Subject: one adorable small cream-white service robot, a charcoal visor with two glowing mint eyes, small orange antenna, little wheels, facing toward bottom of screen. No floor or platform. Transparent background.",
+      "transparent_background": true
+    },
+    "box": {
+      "source": "image_gen",
+      "generation_prompt": "Use case: stylized-concept. Asset type: a single game tile for a polished cozy science-fiction Sokoban puzzle. Style: clean hand-painted 3D clay game illustration, orthographic top-down with a very slight view of the front edge, soft bevels, sophisticated navy/teal and warm amber palette, crisp silhouette, restrained details, no text, no logos, no watermarks. Square composition, one tile only, centered, all content fully inside image with margin. Subject: one cubic orange cargo crate, thick beveled corners, simple dark navy cross brace, small mint indicator. Fill about 78% of canvas. No floor or platform. Transparent background.",
+      "transparent_background": true
+    },
+    "floor": {
+      "source": "image_gen",
+      "generation_prompt": "Use case: stylized-concept. Asset type: a single game tile for a polished cozy science-fiction Sokoban puzzle. Style: clean hand-painted 3D clay game illustration, orthographic top-down with a very slight view of the front edge, soft bevels, sophisticated navy/teal and warm amber palette, crisp silhouette, restrained details, no text, no logos, no watermarks. Square composition, one tile only, centered, all content fully inside image with margin. Subject: a seamless square dark blue-teal metal floor tile, flat orthographic square viewed directly from above, subtle recessed panel border and tiny corner rivets. Full bleed to every edge, opaque. Low contrast and dark enough for the bright game objects to stand out. No objects.",
+      "transparent_background": false
+    },
+    "wall": {
+      "source": "image_gen",
+      "generation_prompt": "Use case: stylized-concept. Asset type: a single game tile for a polished cozy science-fiction Sokoban puzzle. Style: clean hand-painted 3D clay game illustration, orthographic top-down with a very slight view of the front edge, soft bevels, sophisticated navy/teal and warm amber palette, crisp silhouette, restrained details, no text, no logos, no watermarks. Square composition, one tile only, centered, all content fully inside image with margin. Subject: one solid square blue-gray sci-fi wall block, viewed directly from above, covers full tile footprint, chunky raised beveled rim, dark slate center, a couple of mint seams, high contrast from dark navy floor. Full bleed opaque image, no backdrop, no extra objects.",
+      "transparent_background": false
+    },
+    "goal": {
+      "source": "image_gen",
+      "generation_prompt": "Use case: stylized-concept. Asset type: a single game tile for a polished cozy science-fiction Sokoban puzzle. Style: clean hand-painted 3D clay game illustration, orthographic top-down with a very slight view of the front edge, soft bevels, sophisticated navy/teal and warm amber palette, crisp silhouette, restrained details, no text, no logos, no watermarks. Square composition, one tile only, centered, all content fully inside image with margin. Subject: one flat circular amber illuminated docking target, a thin ring with four small cardinal ticks and central warm glow, viewed directly from above, clean and readable. No floor, no platform, transparent background.",
+      "transparent_background": true
+    }
+  }
+}

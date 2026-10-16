@@ -1,0 +1,851 @@
+{
+  "training": {
+    "created_at_utc": "2026-10-16T13:49:02.020909+00:00",
+    "episodes": 50000,
+    "requested_episodes": 50000,
+    "seed": 42,
+    "alpha": 0.3,
+    "gamma": 0.98,
+    "max_pushes": 40,
+    "elapsed_seconds": 8.543,
+    "transitions": 331989,
+    "learned_states": 616,
+    "root_start": {
+      "player": [
+        3,
+        3
+      ],
+      "boxes": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ]
+    },
+    "root_training_episodes": 20216,
+    "root_training_successes": 6602,
+    "root_greedy_solved": true,
+    "root_greedy_moves": 30,
+    "root_greedy_pushes": 8,
+    "random_policy_baseline": {
+      "episodes": 24,
+      "successes": 0,
+      "success_rate": 0.0
+    },
+    "held_out_reset_states": 22,
+    "held_out_reset_successes": 2,
+    "held_out_note": "Same wall/goal layout; reset positions excluded from curriculum starts, but states or transitions may be visited during training. Not unseen levels.",
+    "scope": "single_wall_goal_layout",
+    "curriculum": "reversible_pulls_without_action_labels",
+    "state_abstraction": "exact_player_and_sorted_boxes",
+    "reward": "-1/push -0.1/walking_step + potential shaping; +50 success; -30 corner/no-action deadlock",
+    "search_demonstrations": false,
+    "inference_search_fallback": false
+  },
+  "history": [
+    {
+      "episode": 500,
+      "mean_reward": -23.651579999999992,
+      "training_success_rate": 0.162,
+      "epsilon": 0.9858,
+      "greedy_root_solved": false,
+      "greedy_root_moves": null
+    },
+    {
+      "episode": 1000,
+      "mean_reward": -24.216880000000007,
+      "training_success_rate": 0.156,
+      "epsilon": 0.9717,
+      "greedy_root_solved": false,
+      "greedy_root_moves": null
+    },
+    {
+      "episode": 1500,
+      "mean_reward": -23.75437999999998,
+      "training_success_rate": 0.164,
+      "epsilon": 0.9576,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 45
+    },
+    {
+      "episode": 2000,
+      "mean_reward": -22.044319999999985,
+      "training_success_rate": 0.182,
+      "epsilon": 0.9436,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 45
+    },
+    {
+      "episode": 2500,
+      "mean_reward": -23.558120000000024,
+      "training_success_rate": 0.17,
+      "epsilon": 0.9297,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 45
+    },
+    {
+      "episode": 3000,
+      "mean_reward": -23.260359999999995,
+      "training_success_rate": 0.17,
+      "epsilon": 0.9158,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 35
+    },
+    {
+      "episode": 3500,
+      "mean_reward": -20.946079999999974,
+      "training_success_rate": 0.2,
+      "epsilon": 0.902,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 45
+    },
+    {
+      "episode": 4000,
+      "mean_reward": -19.85762000000001,
+      "training_success_rate": 0.212,
+      "epsilon": 0.8883,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 45
+    },
+    {
+      "episode": 4500,
+      "mean_reward": -19.78725999999999,
+      "training_success_rate": 0.212,
+      "epsilon": 0.8747,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 45
+    },
+    {
+      "episode": 5000,
+      "mean_reward": -17.666619999999988,
+      "training_success_rate": 0.244,
+      "epsilon": 0.8611,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 45
+    },
+    {
+      "episode": 5500,
+      "mean_reward": -19.338099999999994,
+      "training_success_rate": 0.224,
+      "epsilon": 0.8477,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 45
+    },
+    {
+      "episode": 6000,
+      "mean_reward": -15.28751999999999,
+      "training_success_rate": 0.272,
+      "epsilon": 0.8343,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 35
+    },
+    {
+      "episode": 6500,
+      "mean_reward": -20.60358,
+      "training_success_rate": 0.212,
+      "epsilon": 0.8209,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 35
+    },
+    {
+      "episode": 7000,
+      "mean_reward": -15.382480000000001,
+      "training_success_rate": 0.268,
+      "epsilon": 0.8077,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 35
+    },
+    {
+      "episode": 7500,
+      "mean_reward": -17.209279999999993,
+      "training_success_rate": 0.254,
+      "epsilon": 0.7945,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 35
+    },
+    {
+      "episode": 8000,
+      "mean_reward": -15.016519999999991,
+      "training_success_rate": 0.284,
+      "epsilon": 0.7814,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 35
+    },
+    {
+      "episode": 8500,
+      "mean_reward": -13.12257999999999,
+      "training_success_rate": 0.302,
+      "epsilon": 0.7684,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 35
+    },
+    {
+      "episode": 9000,
+      "mean_reward": -14.486359999999992,
+      "training_success_rate": 0.288,
+      "epsilon": 0.7554,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 35
+    },
+    {
+      "episode": 9500,
+      "mean_reward": -12.123299999999993,
+      "training_success_rate": 0.312,
+      "epsilon": 0.7426,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 35
+    },
+    {
+      "episode": 10000,
+      "mean_reward": -14.563340000000006,
+      "training_success_rate": 0.298,
+      "epsilon": 0.7298,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 35
+    },
+    {
+      "episode": 10500,
+      "mean_reward": -10.973379999999993,
+      "training_success_rate": 0.332,
+      "epsilon": 0.7171,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 35
+    },
+    {
+      "episode": 11000,
+      "mean_reward": -13.967739999999987,
+      "training_success_rate": 0.296,
+      "epsilon": 0.7045,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 35
+    },
+    {
+      "episode": 11500,
+      "mean_reward": -12.013520000000016,
+      "training_success_rate": 0.316,
+      "epsilon": 0.6919,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 35
+    },
+    {
+      "episode": 12000,
+      "mean_reward": -11.706480000000008,
+      "training_success_rate": 0.326,
+      "epsilon": 0.6794,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 35
+    },
+    {
+      "episode": 12500,
+      "mean_reward": -8.859080000000002,
+      "training_success_rate": 0.36,
+      "epsilon": 0.6671,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 32
+    },
+    {
+      "episode": 13000,
+      "mean_reward": -10.681580000000006,
+      "training_success_rate": 0.348,
+      "epsilon": 0.6548,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 32
+    },
+    {
+      "episode": 13500,
+      "mean_reward": -8.779960000000004,
+      "training_success_rate": 0.366,
+      "epsilon": 0.6425,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 14000,
+      "mean_reward": -11.362879999999983,
+      "training_success_rate": 0.338,
+      "epsilon": 0.6304,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 14500,
+      "mean_reward": -8.943140000000001,
+      "training_success_rate": 0.362,
+      "epsilon": 0.6184,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 15000,
+      "mean_reward": -14.13899999999999,
+      "training_success_rate": 0.308,
+      "epsilon": 0.6064,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 15500,
+      "mean_reward": -10.583740000000002,
+      "training_success_rate": 0.348,
+      "epsilon": 0.5945,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 16000,
+      "mean_reward": -5.406580000000003,
+      "training_success_rate": 0.408,
+      "epsilon": 0.5827,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 16500,
+      "mean_reward": -8.112760000000002,
+      "training_success_rate": 0.38,
+      "epsilon": 0.571,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 17000,
+      "mean_reward": -2.311079999999999,
+      "training_success_rate": 0.446,
+      "epsilon": 0.5594,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 17500,
+      "mean_reward": -6.029880000000002,
+      "training_success_rate": 0.41,
+      "epsilon": 0.5479,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 18000,
+      "mean_reward": -8.084440000000011,
+      "training_success_rate": 0.386,
+      "epsilon": 0.5364,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 18500,
+      "mean_reward": -7.1646199999999975,
+      "training_success_rate": 0.39,
+      "epsilon": 0.5251,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 19000,
+      "mean_reward": -6.3756600000000025,
+      "training_success_rate": 0.404,
+      "epsilon": 0.5138,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 19500,
+      "mean_reward": -7.364400000000005,
+      "training_success_rate": 0.392,
+      "epsilon": 0.5026,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 20000,
+      "mean_reward": -7.165860000000005,
+      "training_success_rate": 0.408,
+      "epsilon": 0.4915,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 20500,
+      "mean_reward": -3.27662,
+      "training_success_rate": 0.444,
+      "epsilon": 0.4805,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 21000,
+      "mean_reward": -1.997459999999998,
+      "training_success_rate": 0.458,
+      "epsilon": 0.4696,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 21500,
+      "mean_reward": 0.3295200000000005,
+      "training_success_rate": 0.476,
+      "epsilon": 0.4588,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 22000,
+      "mean_reward": -1.1628999999999992,
+      "training_success_rate": 0.462,
+      "epsilon": 0.4481,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 22500,
+      "mean_reward": -1.4878799999999999,
+      "training_success_rate": 0.46,
+      "epsilon": 0.4375,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 23000,
+      "mean_reward": 5.439819999999998,
+      "training_success_rate": 0.54,
+      "epsilon": 0.427,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 23500,
+      "mean_reward": 1.6160000000000012,
+      "training_success_rate": 0.494,
+      "epsilon": 0.4166,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 24000,
+      "mean_reward": 0.8135600000000001,
+      "training_success_rate": 0.486,
+      "epsilon": 0.4062,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 24500,
+      "mean_reward": 2.689459999999998,
+      "training_success_rate": 0.512,
+      "epsilon": 0.396,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 25000,
+      "mean_reward": 5.655379999999994,
+      "training_success_rate": 0.55,
+      "epsilon": 0.3859,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 25500,
+      "mean_reward": 3.140539999999998,
+      "training_success_rate": 0.522,
+      "epsilon": 0.3759,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 26000,
+      "mean_reward": 4.270480000000003,
+      "training_success_rate": 0.526,
+      "epsilon": 0.3659,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 26500,
+      "mean_reward": 4.507339999999999,
+      "training_success_rate": 0.534,
+      "epsilon": 0.3561,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 27000,
+      "mean_reward": 4.594519999999996,
+      "training_success_rate": 0.536,
+      "epsilon": 0.3464,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 27500,
+      "mean_reward": 3.029380000000001,
+      "training_success_rate": 0.52,
+      "epsilon": 0.3368,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 28000,
+      "mean_reward": 8.757539999999995,
+      "training_success_rate": 0.58,
+      "epsilon": 0.3273,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 28500,
+      "mean_reward": 6.981379999999993,
+      "training_success_rate": 0.57,
+      "epsilon": 0.3179,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 29000,
+      "mean_reward": 11.019160000000007,
+      "training_success_rate": 0.612,
+      "epsilon": 0.3086,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 29500,
+      "mean_reward": 7.426459999999994,
+      "training_success_rate": 0.574,
+      "epsilon": 0.2994,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 30000,
+      "mean_reward": 8.049280000000003,
+      "training_success_rate": 0.584,
+      "epsilon": 0.2903,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 30500,
+      "mean_reward": 12.048859999999998,
+      "training_success_rate": 0.624,
+      "epsilon": 0.2814,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 31000,
+      "mean_reward": 15.212040000000004,
+      "training_success_rate": 0.66,
+      "epsilon": 0.2725,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 31500,
+      "mean_reward": 13.63106,
+      "training_success_rate": 0.64,
+      "epsilon": 0.2638,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 32000,
+      "mean_reward": 14.138240000000001,
+      "training_success_rate": 0.644,
+      "epsilon": 0.2552,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 32500,
+      "mean_reward": 13.704020000000007,
+      "training_success_rate": 0.64,
+      "epsilon": 0.2467,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 33000,
+      "mean_reward": 17.421620000000004,
+      "training_success_rate": 0.684,
+      "epsilon": 0.2383,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 33500,
+      "mean_reward": 17.78115999999999,
+      "training_success_rate": 0.692,
+      "epsilon": 0.2301,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 34000,
+      "mean_reward": 18.097780000000018,
+      "training_success_rate": 0.694,
+      "epsilon": 0.222,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 34500,
+      "mean_reward": 20.082720000000002,
+      "training_success_rate": 0.71,
+      "epsilon": 0.214,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 35000,
+      "mean_reward": 20.019140000000018,
+      "training_success_rate": 0.708,
+      "epsilon": 0.2061,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 35500,
+      "mean_reward": 22.835800000000024,
+      "training_success_rate": 0.74,
+      "epsilon": 0.1984,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 36000,
+      "mean_reward": 21.650319999999986,
+      "training_success_rate": 0.722,
+      "epsilon": 0.1908,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 36500,
+      "mean_reward": 22.20588000000001,
+      "training_success_rate": 0.728,
+      "epsilon": 0.1833,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 37000,
+      "mean_reward": 22.629020000000022,
+      "training_success_rate": 0.734,
+      "epsilon": 0.1759,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 37500,
+      "mean_reward": 23.20070000000002,
+      "training_success_rate": 0.736,
+      "epsilon": 0.1688,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 38000,
+      "mean_reward": 27.94676000000003,
+      "training_success_rate": 0.796,
+      "epsilon": 0.1617,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 38500,
+      "mean_reward": 24.980560000000015,
+      "training_success_rate": 0.764,
+      "epsilon": 0.1548,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 39000,
+      "mean_reward": 26.285920000000015,
+      "training_success_rate": 0.77,
+      "epsilon": 0.148,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 39500,
+      "mean_reward": 27.80094000000004,
+      "training_success_rate": 0.794,
+      "epsilon": 0.1414,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 40000,
+      "mean_reward": 30.359000000000055,
+      "training_success_rate": 0.82,
+      "epsilon": 0.135,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 40500,
+      "mean_reward": 30.807300000000055,
+      "training_success_rate": 0.83,
+      "epsilon": 0.1287,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 41000,
+      "mean_reward": 31.30550000000007,
+      "training_success_rate": 0.836,
+      "epsilon": 0.1226,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 41500,
+      "mean_reward": 29.518600000000074,
+      "training_success_rate": 0.806,
+      "epsilon": 0.1166,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 42000,
+      "mean_reward": 30.924380000000042,
+      "training_success_rate": 0.832,
+      "epsilon": 0.1108,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 42500,
+      "mean_reward": 29.89714000000006,
+      "training_success_rate": 0.818,
+      "epsilon": 0.1052,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 43000,
+      "mean_reward": 31.498920000000044,
+      "training_success_rate": 0.836,
+      "epsilon": 0.0998,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 43500,
+      "mean_reward": 34.784360000000056,
+      "training_success_rate": 0.872,
+      "epsilon": 0.0945,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 44000,
+      "mean_reward": 31.22606000000008,
+      "training_success_rate": 0.838,
+      "epsilon": 0.0895,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 44500,
+      "mean_reward": 34.433820000000054,
+      "training_success_rate": 0.87,
+      "epsilon": 0.0847,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 45000,
+      "mean_reward": 34.367200000000075,
+      "training_success_rate": 0.872,
+      "epsilon": 0.08,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 45500,
+      "mean_reward": 37.0015800000001,
+      "training_success_rate": 0.898,
+      "epsilon": 0.0757,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 46000,
+      "mean_reward": 32.240540000000074,
+      "training_success_rate": 0.848,
+      "epsilon": 0.0715,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 46500,
+      "mean_reward": 35.99550000000009,
+      "training_success_rate": 0.892,
+      "epsilon": 0.0676,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 47000,
+      "mean_reward": 37.14556000000015,
+      "training_success_rate": 0.906,
+      "epsilon": 0.064,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 47500,
+      "mean_reward": 36.19772000000006,
+      "training_success_rate": 0.892,
+      "epsilon": 0.0606,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 48000,
+      "mean_reward": 38.81786000000017,
+      "training_success_rate": 0.926,
+      "epsilon": 0.0576,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 48500,
+      "mean_reward": 39.28792000000005,
+      "training_success_rate": 0.93,
+      "epsilon": 0.0549,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 49000,
+      "mean_reward": 37.04734000000011,
+      "training_success_rate": 0.904,
+      "epsilon": 0.0527,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 49500,
+      "mean_reward": 38.379720000000106,
+      "training_success_rate": 0.916,
+      "epsilon": 0.051,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    },
+    {
+      "episode": 50000,
+      "mean_reward": 38.254620000000116,
+      "training_success_rate": 0.912,
+      "epsilon": 0.05,
+      "greedy_root_solved": true,
+      "greedy_root_moves": 30
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "level": {
+    "schema_version": 1,
+    "id": "gen-b57badb9",
+    "title": "Màn tạo · 60",
+    "source": "generated",
+    "seed": 60,
+    "grid": [
+      "#######",
+      "#   . #",
+      "#  #  #",
+      "# $@  #",
+      "# $#. #",
+      "#     #",
+      "#######"
+    ]
+  },
+  "results": [
+    {
+      "Agent": "Breadth-first search (BFS)",
+      "Kết quả": "solved",
+      "Bước đi": 30,
+      "Lượt đẩy": 8,
+      "Trạng thái / quyết định": 2788,
+      "Thời gian (ms)": 19.123,
+      "Bảo đảm tối ưu": "player_moves",
+      "Lý do": ""
+    },
+    {
+      "Agent": "A* push-macro (moves, pushes)",
+      "Kết quả": "solved",
+      "Bước đi": 30,
+      "Lượt đẩy": 8,
+      "Trạng thái / quyết định": 52,
+      "Thời gian (ms)": 2.696,
+      "Bảo đảm tối ưu": "player_moves_then_pushes",
+      "Lý do": ""
+    },
+    {
+      "Agent": "A* push-macro (pushes, moves)",
+      "Kết quả": "solved",
+      "Bước đi": 30,
+      "Lượt đẩy": 8,
+      "Trạng thái / quyết định": 39,
+      "Thời gian (ms)": 2.296,
+      "Bảo đảm tối ưu": "pushes_then_player_moves",
+      "Lý do": ""
+    },
+    {
+      "Agent": "RL · Tabular Q-learning (push actions)",
+      "Kết quả": "solved",
+      "Bước đi": 30,
+      "Lượt đẩy": 8,
+      "Trạng thái / quyết định": 8,
+      "Thời gian (ms)": 1.151,
+      "Bảo đảm tối ưu": "Không",
+      "Lý do": ""
+    }
+  ]
+}

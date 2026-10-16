@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "objective-tradeoff",
+  "title": "Ưu tiên bước đi hay lượt đẩy?",
+  "source": "imported",
+  "seed": null,
+  "grid": [
+    "#######",
+    "# #  @#",
+    "# $   #",
+    "#     #",
+    "#. $  #",
+    "# .   #",
+    "#######"
+  ]
+}

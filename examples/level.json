@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "gen-b2a5e45f",
+  "title": "Màn tạo · 42",
+  "source": "generated",
+  "seed": 42,
+  "grid": [
+    "######",
+    "#. $ #",
+    "#    #",
+    "#   @#",
+    "#. $ #",
+    "######"
+  ]
+}

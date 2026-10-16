@@ -1,0 +1,17 @@
+[global]
+developmentMode = false
+
+[theme]
+base = "light"
+primaryColor = "#6B5CE7"
+backgroundColor = "#F6F7FB"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#22283F"
+font = "sans serif"
+
+[server]
+headless = true
+address = "127.0.0.1"
+
+[browser]
+gatherUsageStats = false
